@@ -22,3 +22,11 @@
 .list-item-new:hover {
     background-color: rgb(163, 163, 163);
 }
+
+.header-content-right-2 {
+    display: none;
+}
+
+.asDone {
+    background-color: rgb(101, 255, 160);
+}

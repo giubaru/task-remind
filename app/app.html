@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/boostrap/css/bootstrap.css">
     <link rel="stylesheet" href="../static/styles/app/main.css">
     <title>Task Remaind</title>
 </head>
@@ -12,20 +12,20 @@
     <!-- Navegacion -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#">Task Remind</a>
+            <a class="navbar-brand" href="../index.html">Task Remind</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="../index.html#home">Inicio <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">App</a>
+                        <a class="nav-link" href="../index.html#about">Acerca</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="../index.html#contact">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -34,21 +34,33 @@
 
     <!-- App  -->
     <header>
-        <div class="container mt-5">
+        <div class="container mt-5" style="box-shadow: -2px 6px 13px -3px rgba(0,0,0,0.75);border-radius: 3%;">
             <div class="row">
-                <div class="col-md-3" style="background-color: rgb(243, 243, 243);">
-                    <a id='new-task' class="btn btn-outline-secondary mt-3 center-block">+ Nuevo</a>
+                <div class="col-md-3" style="background-color: rgb(243, 243, 243); 
+                border-top-left-radius: 3%;border-bottom-left-radius: 3%;">
+                    <a id='new-task' class="btn btn-outline-primary mt-3 center-block">+ Nuevo</a>
+                    <a id='delete-all-task' class="btn btn-outline-danger mt-3 center-block">- Borrar todo</a>
                     <ul class="list-container mt-3 mb-3" id="list-container">
                     </ul>
                 </div>
-                <div class="col-md-9" style="background-color: rgb(235, 235, 235);">
-                    <div class="header-content-right mt-3  mb-3">
+                <div class="col-md-9" style="background-color: rgb(235, 235, 235);border-top-right-radius: 3%;border-bottom-right-radius: 3%;">
+                    <div class="header-content-right-1 mt-3  mb-3">
+                        <h1>Sin tareas</h1>
+                    </div>
+                    <div class="header-content-right-2 mt-3  mb-3">
                         <div>
-                            <h6 id='task-id'># 0</h6>
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <h6 id='task-id'># 0 </h6>
+                                </div>
+                                <div class="col-md-2">
+                                        <span class="ml-auto" contenteditable="true" id="task-priority">importante</span>
+                                </div>
+                            </div>
                             <h3  contenteditable="true" class="display-7" id="task-name">Task 1</h3>
                         </div>
                         <hr/>
-                        <p contenteditable="true" style="padding: 0;margin: 0; float: left;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;width: 450px;" id="task-description">Description</p>
+                        <p contenteditable="true" style="padding: 0;margin: 0; float: left;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;width: 450px;color:rgb(116, 116, 116);" id="task-description">Description</p>
                         <div style="float: right;">
                             <a class="btn btn-outline-success btn-sm mb-3 mr-auto" id='task-done'>Terminar</a>
                             <a class="btn btn-outline-danger btn-sm mb-3 mr-auto" id='task-delete'>Eliminar</a>
@@ -61,7 +73,7 @@
         </div>
     </header>
 
-    <script src="../static/bootstrap/js/bootstrap.js"></script>
+    <script src="../static/boostrap/js/bootstrap.js"></script>
     <script src="../static/js/app_logic.js"></script>
 </body>
 </html>
