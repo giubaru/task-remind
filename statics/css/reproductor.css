@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+text-align: center;
+} 
+
+header, section, footer, aside, nav, article, figure, figcaption, hgroup{
+display : block;
+} 
+
+#reproductor{
+width: 300px;
+margin: 20px auto;
+padding: 10px;
+background:rgb(241, 241, 241);
+border: 1px solid #c7c7c7;
+border-radius: 2px;
+} 
+
+nav{
+margin: 5px 0px;
+}
+
+#botones{
+float: left;
+width: 50px;
+height: 10px;
+} 
+
+#barra{
+position: relative;
+float: left;
+width: 300px;
+height: 5px;
+padding:0;
+border: 1px solid #CCCCCC;
+background-color: #EEEEEE;
+border-radius:10px;
+} 
+
+#progreso{
+position: absolute;
+width: 0px;
+height: 5px;
+background: rgba(0,0,150,.2);
+border-radius:10px; 
+}
+
+#reproducir {
+	background-color: rgb(182, 179, 179);
+	border:none;
+	padding:5px 10px;
+	border-radius:4px;
+}

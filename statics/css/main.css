@@ -1,0 +1,328 @@
+/* @import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap'); */
+* {
+    margin: 0;
+    padding: 0;
+}
+h1, h2, p, li {
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.logo-font {
+    text-decoration: none;
+    font-family: 'Titillium Web', sans-serif;
+    color: rgb(89, 87, 87);
+    font-size: 20px;
+}
+.t {
+    font-family: 'Titillium Web', sans-serif;
+    color: rgb(89, 87, 87);
+    font-size: 50px;
+}
+.title {
+    font-family: 'Titillium Web', sans-serif;
+    color: rgb(111, 111, 111);
+}
+
+.title-var{
+    background-color: rgb(241, 241, 241); 
+}
+.center-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: left;
+}
+.center-left-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.center-left * {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.center-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;     
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.mt-stnd {
+    margin-top: 2%;
+}
+.mt-stnd {
+    margin-bottom: 2%;
+}
+.mt-stnd-1 {
+    margin-top: 2%;
+}
+.mt-stnd-2 {
+    margin-top: 5%;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10%;
+    padding-right: 10%;     
+    
+}
+.low {
+    padding-left: 3%;
+    padding-right: 3%;     
+    
+}
+.navbar {
+    display: flex;
+    list-style-type: none;
+    height: 50px;
+    text-align: center;
+}
+.navbar .navbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    padding: 5px;
+}
+.navbtn:hover {
+    background-color: rgb(225, 225, 225); 
+}
+.navbtn a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Titillium Web', sans-serif;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    color: rgb(65, 65, 65);
+}
+.navbtn a:active {
+    color: rgb(101, 101, 101);
+}
+.navbtn a:visited {
+    color:none;
+}
+.left-content {
+    width: 50%;
+    height: 300px;
+    /* background-color: brown; */
+}
+.left-content-app {
+    width: 50%;
+    height: 100%;
+    /* background-color: brown; */
+}
+.left-content-1 {
+    width: 100%;
+    height: 300px;
+    /* background-color: brown; */
+}
+.left-content-2 {
+    justify-content: space-around;
+
+    width: 100%;
+    height: 2em;
+    /* background-color: brown; */
+}
+
+
+.right-content {
+    width: 100%;
+    height: 300px;
+    /* background-color: rgb(230, 154, 154); */
+}
+.right-content-app {
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(230, 154, 154); */
+}
+
+.right-content-1 {
+    width: 50%;
+    height: 300px;
+    /* background-color: rgb(230, 154, 154); */
+}
+
+.btn {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color:rgb(111, 111, 111);
+    border: solid rgb(111, 111, 111) 1px;
+    border-radius: 6px;
+    width: 2px;
+    height: 40px;    
+}
+.btn:hover, .btn-1:hover {
+    background-color: rgb(148, 148, 148);
+    color: rgb(240, 240, 240);
+    transition-delay:0.1s;
+}
+.btn-add:hover {
+    cursor: pointer;
+    background-color: rgb(67, 95, 255);
+    color: rgb(208, 214, 249);
+    transition-delay:0.1s;
+}
+.btn-remove:hover {
+    background-color: rgb(247, 74, 74);
+    color: rgb(250, 188, 188);
+    transition-delay:0.1s;
+}
+.btn-complete:hover {
+    background-color: rgb(52, 223, 44);
+    color: rgb(245, 245, 245);
+    transition-delay:0.1s;
+}
+
+.btn-1 {
+    padding: 5px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color:rgb(111, 111, 111);
+    border: solid rgb(111, 111, 111) 1px;
+    border-radius: 6px;
+    width: 2px;
+    height: 40px;    
+}
+
+.btn-add {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color:rgb(67, 95, 255);
+    border: solid rgb(67, 95, 255) 1px;
+    border-radius: 6px;
+    /* width: 1em; */
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 30px;
+}
+.btn-complete {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color:rgb(52, 223, 44);
+    border: solid rgb(52, 223, 44) 1px;
+    border-radius: 6px;
+    /* width: 1em; */
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 30px;
+}
+.btn-remove {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color:rgb(247, 74, 74);
+    border: solid rgb(247, 74, 74) 1px;
+    border-radius: 6px;
+     /* width: 1em; */
+     padding-left: 1em;
+     padding-right: 1em;
+    height: 30px;
+}
+
+.footer{
+    background-color: pink;
+}
+
+
+.bg-blue {
+    background-color: blue;
+}
+.bg-red {
+    background-color: red;
+}
+.bg-brown {
+    background-color: brown;
+}
+.bg-pink {
+    background-color: pink;
+}
+.bg-grey {
+    background-color: rgb(227, 227, 227); 
+}
+.bg-grey-1 {
+    background-color: rgb(242, 242, 242); 
+}
+.bg-grey-2 {
+    background-color: rgb(255, 255, 255); 
+    box-shadow: 2px 2px 16px -5px rgba(0,0,0,0.75);
+    border-radius: 4px;
+
+}
+
+
+/* grid */
+.container {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+}
+.header {
+grid-column: span 12;
+}
+.navigation-menu {
+grid-column: span 6;
+background-color: brown;
+}
+.main-content {
+grid-column: span 9;
+background-color: violet;
+}
+.footer {
+grid-column: span 12;
+}
+
+
+
+
+
+.elem-1 {
+    background-color: red;
+    width: 200px;
+    height: 100px;
+}
+
+.elem-2 {
+    background-color: pink;
+    width: 400px;
+    height: 100px;
+}
+
+.md-box {
+    background-color: rgb(218, 218, 218);
+    width: 450px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.total-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+}
